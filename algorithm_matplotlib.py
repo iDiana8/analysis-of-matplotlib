@@ -1,10 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('sales.csv')
+df = pd.read_csv('data/sales.csv')
 
 #СОЗДАНИЕ ХОЛСТА
-fig, ax = plt.subplots(1, 2, figsize=(14, 5), layou='constrained')
+fig, ax = plt.subplots(1, 2, figsize=(14, 5), layout='constrained')
 
 #РИСОВАНИЕ
 #ЛИНЕЙНЫЙ ГРАФИК
@@ -38,5 +38,5 @@ ax[1].grid(True, axis='y', alpha=0.3)
 ax[1].legend()
 
 #ОТОБРАЖЕНИЕ
-fig.savefig('out.png')
+fig.savefig('output/sales_analysis.png')
 plt.show()
